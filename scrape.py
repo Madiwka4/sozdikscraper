@@ -10,11 +10,11 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
     except getopt.GetoptError:
-        print ('spotitube.py -i <Search Keyword> -o <Index>')
+        print ('scrape.py -i <Search Keyword> -o <Index>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print ('spotitube.py -i <Search Keyword> -o <Index>')
+            print ('scrape.py -i <Search Keyword> -o <Index>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg
